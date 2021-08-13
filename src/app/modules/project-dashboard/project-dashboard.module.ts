@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ProjectCardComponent } from './components/project-card/project-card.component';
-import { ProjectDashboardPageComponent } from './project-dashboard-page/project-dashboard-page.component';
+import { ProjectDashboardPageComponent } from './components/project-dashboard-page/project-dashboard-page.component';
 
 interface Projects {
   name: string,
