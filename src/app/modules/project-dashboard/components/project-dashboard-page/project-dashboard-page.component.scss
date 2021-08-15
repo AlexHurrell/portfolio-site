@@ -1,9 +1,14 @@
 :host {
   display: block;
   padding: 1em;
+  max-width: 1200px;
 }
 
 .projects {
-  max-width: 1500px;
   margin: auto !important;
+}
+
+.sample-projects {
+  display: flex;
+  justify-content: center;
 }
