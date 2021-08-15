@@ -1,4 +1,9 @@
 :host {
-    display: block;
-    padding: 1em;
+  display: block;
+  padding: 1em;
+}
+
+.projects {
+  max-width: 1500px;
+  margin: auto !important;
 }

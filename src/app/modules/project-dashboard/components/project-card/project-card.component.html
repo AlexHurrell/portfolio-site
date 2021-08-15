@@ -1,1 +1,23 @@
-<p>project-card works!</p>
+<mat-card>
+  <mat-card-header>
+    <mat-card-title>{{ project.title }}</mat-card-title>
+  </mat-card-header>
+  <img mat-card-image src="assets/mock.jpg" alt="mock" />
+  <mat-card-content>
+    <p>
+      {{ project.description }}
+    </p>
+  </mat-card-content>
+  <mat-card-actions *ngIf="project.githubLink || project.siteLink">
+    <a href="{{ project.githubLink }}" target="_blank">
+      <button mat-raised-button *ngIf="project.githubLink">
+        <mat-icon>code</mat-icon>
+      </button>
+    </a>
+    <a href="{{ project.githubLink }}" target="_blank" class="ml-3">
+      <button mat-raised-button *ngIf="project.siteLink">
+        <mat-icon>open_in_new</mat-icon>
+      </button>
+    </a>
+  </mat-card-actions>
+</mat-card>
