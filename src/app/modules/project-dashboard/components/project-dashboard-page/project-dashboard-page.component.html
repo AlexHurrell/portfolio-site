@@ -1,23 +1,26 @@
-<div>
-  <p>I'm a frontend engineer</p>
+<div class="mat-body-1">
+  <p>I'm a passionate software engineer, focusing on frontend development.</p>
   <p>
-    Outside of software I run as much as I can.
-    <mat-icon>directions_run</mat-icon>
+    Outside of software my passion is all things running. Catch me at the local
+    parkrun, trail or road race.
   </p>
 </div>
 
-<div class="sample-projects">
+<div class="sample-projects pt-2">
   <h2>Sample Projects</h2>
 </div>
 
-<div
+<!-- <div
   fxLayout="row wrap"
   fxLayoutGap="15px grid"
   fxLayoutAlign="space-around"
   class="projects"
 >
-  <app-project-card
-    *ngFor="let project of projects"
-    [project]="project"
-  ></app-project-card>
-</div>
+  <app-project-card *ngFor="let project of projects" [project]="project">
+  </app-project-card>
+</div> -->
+
+<app-project-card
+  *ngFor="let project of projects"
+  [project]="project"
+></app-project-card>

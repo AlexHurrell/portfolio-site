@@ -1,23 +1,47 @@
-<mat-card>
-  <mat-card-header>
-    <mat-card-title>{{ project.title }}</mat-card-title>
-  </mat-card-header>
-  <img mat-card-image src="assets/mock.jpg" alt="mock" />
-  <mat-card-content>
-    <p>
-      {{ project.description }}
-    </p>
-  </mat-card-content>
-  <mat-card-actions *ngIf="project.githubLink || project.siteLink">
-    <a href="{{ project.githubLink }}" target="_blank">
-      <button mat-raised-button *ngIf="project.githubLink">
-        <mat-icon>code</mat-icon>
-      </button>
-    </a>
-    <a href="{{ project.githubLink }}" target="_blank" class="ml-3">
-      <button mat-raised-button *ngIf="project.siteLink">
-        <mat-icon>open_in_new</mat-icon>
-      </button>
-    </a>
-  </mat-card-actions>
-</mat-card>
+<!-- <div fxLayout="row" fxLayoutGap="12px" [style.margin-top]="'12px'">
+  <mat-card>
+    <mat-card-header>
+      <mat-card-title>{{ project.title }}</mat-card-title>
+    </mat-card-header>
+    <div fxLayout="column">
+      <img mat-card-image src="assets/mock.jpg" alt="mock" />
+      <mat-card-content>
+        <p>
+          {{ project.description }}
+        </p>
+      </mat-card-content>
+    </div>
+    <mat-card-actions *ngIf="project.githubLink || project.siteLink">
+      <a href="{{ project.githubLink }}" target="_blank">
+        <button mat-raised-button *ngIf="project.githubLink">
+          <mat-icon>code</mat-icon>
+        </button>
+      </a>
+      <a href="{{ project.githubLink }}" target="_blank" class="ml-3">
+        <button mat-raised-button *ngIf="project.siteLink">
+          <mat-icon>open_in_new</mat-icon>
+        </button>
+      </a>
+    </mat-card-actions>
+  </mat-card>
+</div> -->
+
+<div style="width: 100%; display: flex; height: 150px" class="mt-3">
+  <img src="assets/mock.jpg" alt="mock" style="max-width: 200px" />
+  <div class="pl-4" fxLayout="column">
+    <h3>{{ project.title }}</h3>
+    <p>{{ project.description }}</p>
+    <div style="margin-top: auto">
+      <a href="{{ project.githubLink }}" target="_blank">
+        <button mat-icon-button *ngIf="project.githubLink">
+          <mat-icon>code</mat-icon>
+        </button>
+      </a>
+      <a href="{{ project.githubLink }}" target="_blank" class="ml-3">
+        <button mat-icon-button *ngIf="project.siteLink">
+          <mat-icon>open_in_new</mat-icon>
+        </button>
+      </a>
+    </div>
+  </div>
+</div>
