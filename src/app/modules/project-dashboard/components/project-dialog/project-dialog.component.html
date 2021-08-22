@@ -1,0 +1,36 @@
+<h2 mat-dialog-title>{{ project.title }}</h2>
+<mat-dialog-content class="mat-typography">
+  <p>
+    {{ project.description }}
+  </p>
+  <p *ngIf="project.technologiesUsed.length">Technologies used:</p>
+  <ul>
+    <li *ngFor="let tech of project.technologiesUsed">{{ tech }}</li>
+  </ul>
+  <img
+    class="dialog-image px-5"
+    src="{{ project.picture }}"
+  />
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+  <mat-card-actions *ngIf="project.githubLink || project.siteLink">
+    <a href="{{ project.githubLink }}" target="_blank">
+      <button
+        mat-raised-button
+        *ngIf="project.githubLink"
+        (click)="$event.stopPropagation()"
+      >
+        <mat-icon>code</mat-icon>
+      </button>
+    </a>
+    <a href="{{ project.githubLink }}" target="_blank" class="ml-3">
+      <button
+        mat-raised-button
+        *ngIf="project.siteLink"
+        (click)="$event.stopPropagation()"
+      >
+        <mat-icon>open_in_new</mat-icon>
+      </button>
+    </a>
+  </mat-card-actions>
+</mat-dialog-actions>

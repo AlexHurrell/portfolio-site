@@ -6,6 +6,9 @@ import { MatCardModule } from '@angular/material/card';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
+import { MatDialogModule } from '@angular/material/dialog';
+import { ProjectDialogComponent } from './components/project-dialog/project-dialog.component';
+import { MatDividerModule } from '@angular/material/divider';
 
 interface Projects {
   name: string;
@@ -15,7 +18,11 @@ interface Projects {
 }
 
 @NgModule({
-  declarations: [ProjectCardComponent, ProjectDashboardPageComponent],
+  declarations: [
+    ProjectCardComponent,
+    ProjectDashboardPageComponent,
+    ProjectDialogComponent,
+  ],
   exports: [ProjectCardComponent],
   imports: [
     CommonModule,
@@ -23,6 +30,8 @@ interface Projects {
     FlexLayoutModule,
     MatButtonModule,
     MatIconModule,
+    MatDialogModule,
+    MatDividerModule,
   ],
 })
 export class ProjectDashboardModule {

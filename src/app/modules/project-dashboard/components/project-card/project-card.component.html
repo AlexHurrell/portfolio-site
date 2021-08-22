@@ -10,12 +10,20 @@
   </mat-card-content>
   <mat-card-actions *ngIf="project.githubLink || project.siteLink">
     <a href="{{ project.githubLink }}" target="_blank">
-      <button mat-raised-button *ngIf="project.githubLink">
+      <button
+        mat-raised-button
+        *ngIf="project.githubLink"
+        (click)="$event.stopPropagation()"
+      >
         <mat-icon>code</mat-icon>
       </button>
     </a>
     <a href="{{ project.githubLink }}" target="_blank" class="ml-3">
-      <button mat-raised-button *ngIf="project.siteLink">
+      <button
+        mat-raised-button
+        *ngIf="project.siteLink"
+        (click)="$event.stopPropagation()"
+      >
         <mat-icon>open_in_new</mat-icon>
       </button>
     </a>

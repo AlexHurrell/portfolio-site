@@ -6,7 +6,9 @@
   </p>
 </div>
 
-<div class="sample-projects pt-2">
+<mat-divider class="my-3"></mat-divider>
+
+<div class="sample-projects">
   <h2>Sample Projects</h2>
 </div>
 
@@ -22,6 +24,7 @@
 
 <div fxLayout="row wrap" fxLayoutGap="25px grid" fxLayoutAlign=" center">
   <app-project-card
+    (click)="openProjectDialog(project)"
     *ngFor="let project of projects"
     [project]="project"
     [fxFlex]="'33%'"
