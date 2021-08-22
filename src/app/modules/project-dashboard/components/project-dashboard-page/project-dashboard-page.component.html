@@ -1,7 +1,7 @@
 <div class="mat-body-1">
   <p>I'm a passionate software engineer, focusing on frontend development.</p>
   <p>
-    Outside of software my passion is all things running. Catch me at the local
+    Outside of software, my passion is all things running. Catch me at the local
     parkrun, trail or road race.
   </p>
 </div>
@@ -20,7 +20,12 @@
   </app-project-card>
 </div> -->
 
-<app-project-card
-  *ngFor="let project of projects"
-  [project]="project"
-></app-project-card>
+<div fxLayout="row wrap" fxLayoutGap="25px grid" fxLayoutAlign=" center">
+  <app-project-card
+    *ngFor="let project of projects"
+    [project]="project"
+    [fxFlex]="'33%'"
+    fxFlex.sm="50%"
+    fxFlex.xs="100%"
+  ></app-project-card>
+</div>
