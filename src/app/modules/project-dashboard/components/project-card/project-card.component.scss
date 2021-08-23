@@ -1,10 +1,9 @@
-@use '~@angular/material' as mat;
-
 .mat-card {
   box-sizing: border-box;
   padding: 16px;
   &:hover {
-    @include mat.elevation(12);
     cursor: pointer;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 17px rgba(0, 0, 0, 0.35);
   }
 }
