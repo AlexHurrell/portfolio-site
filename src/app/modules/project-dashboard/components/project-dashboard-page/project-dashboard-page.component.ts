@@ -19,27 +19,26 @@ export class ProjectDashboardPageComponent {
       githubLink: 'https://github.com/AlexHurrell/simple-chat',
     },
     {
-      title: 'Todo List',
-      description: 'Containing filtering, sorting and basic CRUD operations',
-      picture: 'assets/mock.jpg',
-      technologiesUsed: ['Angular', 'Typescript', 'Material'],
-      githubLink: 'https://google.com',
-      siteLink: 'https://google.com',
-    },
-    {
-      title: 'Todo List Redux',
-      description: 'Implementing Redux into a todo list.',
-      picture: 'assets/mock.jpg',
-      technologiesUsed: ['Angular', 'Typescript', 'Redux'],
+      title: 'ToDo List',
+      description:
+        'A simple todo list with filtering, editing and sorting options.',
+      picture: 'assets/angular_todo.JPG',
+      technologiesUsed: ['Angular', 'Typescript', 'Material', 'local storage'],
+      githubLink: 'https://github.com/AlexHurrell/todo-list-angular',
     },
     {
       title: 'Running pace calculator',
       description:
-        'A multiple paged workflow form resulting in required pace for target',
-      picture: 'assets/mock.jpg',
-      technologiesUsed: ['Angular', 'Typescript', 'Redux', 'Reactive Forms'],
-      githubLink: 'https://google.com',
-      siteLink: 'https://google.com',
+        'A multiple paged workflow form resulting in time, pace or distance output.',
+      picture: 'assets/running_calculator.JPG',
+      technologiesUsed: [
+        'Angular',
+        'Typescript',
+        'Material',
+        'Reactive Forms',
+        'Routing',
+      ],
+      githubLink: 'https://github.com/AlexHurrell/running-pace-calculator',
     },
   ];
 
