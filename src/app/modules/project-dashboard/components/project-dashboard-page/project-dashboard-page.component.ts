@@ -14,7 +14,7 @@ export class ProjectDashboardPageComponent {
       title: 'Simple Chat',
       description:
         "A quick mock chat app that 'sends and receives' messages in a window.",
-      technologiesUsed: ['React', 'React Hooks', 'Material UI', 'Services'],
+      technologiesUsed: ['React', 'React Hooks', 'Material UI'],
       picture: 'assets/simple_chat.JPG',
       githubLink: 'https://github.com/AlexHurrell/simple-chat',
     },

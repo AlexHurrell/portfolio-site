@@ -34,6 +34,4 @@ interface Projects {
     MatDividerModule,
   ],
 })
-export class ProjectDashboardModule {
-  projects: Projects[] = [];
-}
+export class ProjectDashboardModule {}
