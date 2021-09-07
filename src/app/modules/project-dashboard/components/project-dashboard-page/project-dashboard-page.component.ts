@@ -24,6 +24,7 @@ export class ProjectDashboardPageComponent {
       picture: 'assets/angular_todo.JPG',
       technologiesUsed: ['Angular', 'Typescript', 'Material', 'local storage'],
       githubLink: 'https://github.com/AlexHurrell/todo-list-angular',
+      siteLink: 'https://alexhurrell.github.io/todo-list-angular/',
     },
     {
       title: 'Running pace calculator',
@@ -38,6 +39,7 @@ export class ProjectDashboardPageComponent {
         'Routing',
       ],
       githubLink: 'https://github.com/AlexHurrell/running-pace-calculator',
+      siteLink: 'https://alexhurrell.github.io/running-pace-calculator/',
     },
   ];
 
