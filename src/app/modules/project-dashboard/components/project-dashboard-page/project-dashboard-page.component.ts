@@ -11,17 +11,16 @@ import { ProjectDialogComponent } from '../project-dialog/project-dialog.compone
 export class ProjectDashboardPageComponent {
   projects: ProjectCard[] = [
     {
-      title: 'Simple Chat',
+      title: 'Chat App',
       description:
-        "A quick mock chat app that 'sends and receives' messages in a window.",
+        'Mock chat app that sends and receives messages in a window.',
       technologiesUsed: ['React', 'React Hooks', 'Material UI'],
       picture: 'assets/simple_chat.JPG',
       githubLink: 'https://github.com/AlexHurrell/simple-chat',
     },
     {
       title: 'ToDo List',
-      description:
-        'A simple todo list with filtering, editing and sorting options.',
+      description: 'ToDo list with filtering, editing and sorting options.',
       picture: 'assets/angular_todo.JPG',
       technologiesUsed: ['Angular', 'Typescript', 'Material', 'local storage'],
       githubLink: 'https://github.com/AlexHurrell/todo-list-angular',
@@ -29,7 +28,7 @@ export class ProjectDashboardPageComponent {
     {
       title: 'Running pace calculator',
       description:
-        'A multiple paged workflow form resulting in time, pace or distance output.',
+        'Multi paged workflow form resulting in time, pace or distance output.',
       picture: 'assets/running_calculator.JPG',
       technologiesUsed: [
         'Angular',
@@ -45,12 +44,9 @@ export class ProjectDashboardPageComponent {
   constructor(public dialog: MatDialog) {}
 
   openProjectDialog(project: ProjectCard) {
-    const dialogRef = this.dialog.open(ProjectDialogComponent, {
+    this.dialog.open(ProjectDialogComponent, {
       data: project,
-    });
-
-    dialogRef.afterClosed().subscribe((result) => {
-      console.log(`Dialog result: ${result}`);
+      autoFocus: false,
     });
   }
 }
