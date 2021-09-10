@@ -9,6 +9,8 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatDialogModule } from '@angular/material/dialog';
 import { ProjectDialogComponent } from './components/project-dialog/project-dialog.component';
 import { MatDividerModule } from '@angular/material/divider';
+import { MatChipsModule } from '@angular/material/chips';
+import { MatTooltipModule } from '@angular/material/tooltip';
 
 interface Projects {
   name: string;
@@ -32,6 +34,8 @@ interface Projects {
     MatIconModule,
     MatDialogModule,
     MatDividerModule,
+    MatChipsModule,
+    MatTooltipModule,
   ],
 })
 export class ProjectDashboardModule {}

@@ -8,25 +8,47 @@
       {{ project.description }}
     </p>
   </mat-card-content>
-  <mat-card-actions *ngIf="project.githubLink || project.siteLink">
-    <a href="{{ project.githubLink }}" target="_blank">
-      <button
-        mat-raised-button
-        *ngIf="project.githubLink"
-        (click)="$event.stopPropagation()"
+  <mat-card-actions
+    *ngIf="project.githubLink || project.siteLink"
+    fxLayout="row"
+    fxLayoutAlign="space-between center"
+  >
+    <div>
+      <a href="{{ project.githubLink }}" target="_blank">
+        <button
+          mat-raised-button
+          *ngIf="project.githubLink"
+          matTooltip="Github Repository"
+          (click)="$event.stopPropagation()"
+        >
+          <mat-icon>code</mat-icon>
+        </button>
+      </a>
+      <a href="{{ project.siteLink }}" target="_blank" class="ml-3">
+        <button
+          mat-raised-button
+          *ngIf="project.siteLink"
+          matTooltip="Live site"
+          (click)="$event.stopPropagation()"
+        >
+          <mat-icon>open_in_new</mat-icon>
+        </button>
+      </a>
+    </div>
+    <mat-chip-list>
+      <mat-chip
+        class="react"
+        selected
+        *ngIf="project.technologiesUsed.includes('React')"
+        >React</mat-chip
       >
-        <mat-icon>code</mat-icon>
-      </button>
-    </a>
-    <a href="{{ project.siteLink }}" target="_blank" class="ml-3">
-      <button
-        mat-raised-button
-        *ngIf="project.siteLink"
-        (click)="$event.stopPropagation()"
+      <mat-chip
+        class="angular"
+        selected
+        *ngIf="project.technologiesUsed.includes('Angular')"
+        >Angular</mat-chip
       >
-        <mat-icon>open_in_new</mat-icon>
-      </button>
-    </a>
+    </mat-chip-list>
   </mat-card-actions>
 </mat-card>
 

@@ -12,12 +12,16 @@
 <mat-dialog-actions align="end">
   <mat-card-actions *ngIf="project.githubLink || project.siteLink">
     <a href="{{ project.githubLink }}" target="_blank">
-      <button mat-raised-button *ngIf="project.githubLink">
+      <button
+        mat-raised-button
+        matTooltip="Github Repository"
+        *ngIf="project.githubLink"
+      >
         <mat-icon>code</mat-icon>
       </button>
     </a>
     <a href="{{ project.siteLink }}" target="_blank" class="ml-3">
-      <button mat-raised-button *ngIf="project.siteLink">
+      <button mat-raised-button matTooltip="Live site" *ngIf="project.siteLink">
         <mat-icon>open_in_new</mat-icon>
       </button>
     </a>
