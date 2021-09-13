@@ -27,6 +27,22 @@ export class ProjectDashboardPageComponent {
       siteLink: 'https://alexhurrell.github.io/todo-list-angular/',
     },
     {
+      title: 'ToDo List (Redux NgRx)',
+      description:
+        'ToDo list with filtering, editing and sorting options implementing NgRx',
+      picture: 'assets/angular_todo_ngrx.JPG',
+      technologiesUsed: [
+        'Angular',
+        'Typescript',
+        'NgRx',
+        'Material',
+        'Reactive Forms',
+        'Routing',
+      ],
+      githubLink: 'https://github.com/AlexHurrell/todo-list-angular-ngrx',
+      siteLink: 'https://alexhurrell.github.io/todo-list-angular-ngrx/',
+    },
+    {
       title: 'Running pace calculator',
       description:
         'Multi paged workflow form resulting in time, pace or distance output.',
