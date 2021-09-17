@@ -57,6 +57,14 @@ export class ProjectDashboardPageComponent {
       githubLink: 'https://github.com/AlexHurrell/running-pace-calculator',
       siteLink: 'https://alexhurrell.github.io/running-pace-calculator/',
     },
+    // {
+    //   title: 'Blog (GraphQL)',
+    //   description: 'Blog retrieving data using QraphQL',
+    //   picture: 'assets/running_calculator.JPG',
+    //   technologiesUsed: ['React', 'React Hooks', 'GraphQL', 'Material UI'],
+    //   githubLink: '',
+    //   siteLink: '',
+    // },
   ];
 
   constructor(public dialog: MatDialog) {}
