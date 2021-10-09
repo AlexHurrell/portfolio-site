@@ -11,6 +11,21 @@ import { ProjectDialogComponent } from '../project-dialog/project-dialog.compone
 export class ProjectDashboardPageComponent {
   projects: ProjectCard[] = [
     {
+      title: 'Running Pace Calculator',
+      description:
+        'Multi paged workflow resulting in time, pace or distance output.',
+      picture: 'assets/running_calculator.JPG',
+      technologiesUsed: [
+        'Angular',
+        'Typescript',
+        'Material',
+        'Reactive Forms',
+        'Routing',
+      ],
+      githubLink: 'https://github.com/AlexHurrell/running-pace-calculator',
+      siteLink: 'https://alexhurrell.github.io/running-pace-calculator/',
+    },
+    {
       title: 'Chat App',
       description:
         'Mock chat app that sends and receives messages in a window.',
@@ -43,28 +58,29 @@ export class ProjectDashboardPageComponent {
       siteLink: 'https://alexhurrell.github.io/todo-list-angular-ngrx/',
     },
     {
-      title: 'Running pace calculator',
-      description:
-        'Multi paged workflow form resulting in time, pace or distance output.',
-      picture: 'assets/running_calculator.JPG',
-      technologiesUsed: [
-        'Angular',
-        'Typescript',
-        'Material',
-        'Reactive Forms',
-        'Routing',
-      ],
-      githubLink: 'https://github.com/AlexHurrell/running-pace-calculator',
-      siteLink: 'https://alexhurrell.github.io/running-pace-calculator/',
+      title: 'Blog (GraphQL)',
+      description: 'Simple blog to play with QraphQL. Work in progress.',
+      picture: 'assets/graphql_blog.JPG',
+      technologiesUsed: ['React', 'React Hooks', 'GraphQL', 'Material UI'],
+      githubLink: 'https://github.com/AlexHurrell/react-graphql',
+      siteLink: '',
     },
-    // {
-    //   title: 'Blog (GraphQL)',
-    //   description: 'Blog retrieving data using QraphQL',
-    //   picture: 'assets/running_calculator.JPG',
-    //   technologiesUsed: ['React', 'React Hooks', 'GraphQL', 'Material UI'],
-    //   githubLink: '',
-    //   siteLink: '',
-    // },
+    {
+      title: 'News Site (Redux)',
+      description: 'Serverless MERN stack project. 2019',
+      picture: 'assets/news_site.jpg',
+      technologiesUsed: [
+        'MongoDB',
+        'React',
+        'Redux',
+        'Express',
+        'Node',
+        'AWS',
+        'react-router',
+      ],
+      githubLink: '',
+      siteLink: '',
+    },
   ];
 
   constructor(public dialog: MatDialog) {}
