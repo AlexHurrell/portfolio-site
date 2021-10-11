@@ -11,6 +11,21 @@ import { ProjectDialogComponent } from '../project-dialog/project-dialog.compone
 export class ProjectDashboardPageComponent {
   projects: ProjectCard[] = [
     {
+      title: 'Near Earth Objects (Redux)',
+      description:
+        'Fetching data from a nasa public api to display near earth objects for the day.',
+      picture: 'assets/near_earth_objects.JPG',
+      technologiesUsed: [
+        'React',
+        'APIs',
+        'Material UI',
+        'Hooks',
+        'Redux',
+        'React testing library'
+      ],
+      githubLink: 'https://github.com/AlexHurrell/react-near-earth-orbit',
+    },
+    {
       title: 'Running Pace Calculator',
       description:
         'Multi paged workflow resulting in time, pace or distance output.',
@@ -83,7 +98,7 @@ export class ProjectDashboardPageComponent {
     },
   ];
 
-  constructor(public dialog: MatDialog) {}
+  constructor(public dialog: MatDialog) { }
 
   openProjectDialog(project: ProjectCard) {
     this.dialog.open(ProjectDialogComponent, {
